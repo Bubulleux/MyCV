@@ -1,0 +1,9 @@
+main > .home-section{
+    overflow: auto;
+    &:nth-child(odd){
+        background-color: $color-section-odd;
+    }
+    &:nth-child(even){
+        background-color: $color-section-even;
+    }
+}
