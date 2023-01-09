@@ -1,0 +1,18 @@
+.navigation {
+    background-color: $header-bg;
+    width: auto;
+    padding: 20px 50px;
+}
+
+.site-title {
+    font-size: 2.3em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline #fff0;
+    transition: text-decoration 100ms;
+}
+
+.site-title:hover {
+    text-decoration: underline #ffff;
+}
