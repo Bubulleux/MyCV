@@ -1,12 +1,20 @@
-<section class="home-section">
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-    </p>
+{{ with .Site.Params.skills }}
+<section class="home-section skills">
+    <ul>
+        {{ range sort . "name" }}
+            <li>
+                <div class="skill">
+                    <div class="img">
+                        {{ $image := resources.Get .img }}
+                        <img src="{{  $image.RelPermalink  }}"></img>
+                    </div>
+                    <div class="infos">
+                        <h3>{{ .name }}</h3>
+                        <p>{{ .infos }}</p>
+                    </div>
+                </div>
+            </li>
+        {{ end }}
+    </ul>
 </section>
+{{ end }}

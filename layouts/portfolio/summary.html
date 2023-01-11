@@ -1,0 +1,11 @@
+<div class="projet-summary">
+    {{ $image := resources.Get (.Params.img) }}
+    {{ with $image }}
+    <img src="{{ .RelPermalink }}"></img>
+    {{ end }}
+    <div>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ .Summary }}
+    </div>
+</div>
+

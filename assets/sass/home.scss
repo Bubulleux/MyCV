@@ -7,13 +7,6 @@ main > .home-section{
     flex-direction: row;
     justify-content: space-between;
 
-    &:nth-child(odd){
-        //background-color: $color-section-odd;
-    }
-    &:nth-child(even){
-        //background-color: $color-section-even;
-    }
-
     .section-title {
         font-size: 1.5em;
         font-weight: bold;
@@ -25,11 +18,36 @@ main > .home-section{
     }
 }
 
-.detail-info {
-}
-
 .quick-info {
     margin: 0px 30px 0px 0px;
     flex-grow: 2;
     white-space: nowrap;
+}
+
+.skills {
+    display: flex;
+}
+
+.home-section ul {
+    list-style: none;
+
+    .skill {
+        background-color: $fg-color-1;
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+    h3 {
+        font-size: 1;
+    }
+    img {
+        width: 60px;
+        height: 60px;
+    }
 }
