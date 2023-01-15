@@ -2,7 +2,7 @@
 title: "Better Bus"
 tags: ["Dart", "Flutter"]
 link: "https://github.com/Bubulleux/better-bus-v2"
-img: "img/portfolio/better-bus/logo.png"
+thumbnail: "img/portfolio/better-bus/logo.png"
 ---
 
 # C'est trop bien

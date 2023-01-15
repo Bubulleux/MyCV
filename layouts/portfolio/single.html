@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{ $image := .Resources.GetMatch "logo.png" }}
-<img src="{{ $image.RelPermalink }}"></img>
 <h1>{{ .Title }}</h1>
 <a href="{{ .Params.link }}" target="_blank">Lien</a>
 {{ .Content }}

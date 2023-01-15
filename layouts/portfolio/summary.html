@@ -1,11 +1,12 @@
-<div class="projet-summary">
-    {{ $image := resources.Get (.Params.img) }}
-    {{ with $image }}
-    <img src="{{ .RelPermalink }}"></img>
-    {{ end }}
+<div class="project-summary">
+    <div class="thumbnail">
+        {{ $image := resources.Get .Params.thumbnail }}
+        <img src="{{ $image.RelPermalink }}" height="auto" width="auto">
+    </div>
     <div>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        {{ .Summary }}
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Show More</a>
     </div>
 </div>
 

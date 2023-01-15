@@ -1,0 +1,22 @@
+.project-summary {
+    height: $project-summary-height;
+    display: flex;
+    background-color: $fg-color-1;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    padding: 10px;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        border: 2px solid $fg-color-2;
+    }
+
+    .thumbnail {
+        aspect-ratio: 1;
+        height: 100%;
+        margin-right: 20px;
+    }
+}
+

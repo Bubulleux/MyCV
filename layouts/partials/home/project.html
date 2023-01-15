@@ -1,0 +1,12 @@
+<section class="home-poject-list">
+    <ul>
+        {{ $projects := .Site.Params.homeProjects }}
+        {{ $portfolio := .Site.GetPage "/portfolio" }}
+        {{ range $projects }}
+            <li>
+                {{ $page := $portfolio.GetPage . }}
+                {{ $page.Render "summary" }}
+            </li>
+        {{ end }}
+    </ul>
+</section>
