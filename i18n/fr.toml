@@ -1,0 +1,21 @@
+[name]
+other = "Nom:"
+
+[age]
+other = "Age:"
+
+[years]
+one = "an"
+other = "ans"
+
+[localisation]
+other = "Localisation:"
+
+[phone]
+other = "Telephone:"
+
+[email]
+other = "Adress mail:"
+
+[presentation]
+other = "Presenation:"
