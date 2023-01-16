@@ -1,0 +1,17 @@
+name = "Ulysse"
+birthDate = 2005-05-06
+localisation = "Poitiers"
+phone = "01.02.03.04.05"
+email = "somemail@mailbox.com"
+
+homeProjects = ["better-bus", "better-bus", "better-bus"]
+
+[[socials]]
+name = "Github"
+logo = "https://img.icons8.com/material-rounded/512/github.png"
+link = "https://github.com/Bubulleux"
+
+[[socials]]
+name = "Twitter"
+logo = "https://img.icons8.com/ios/512/twitter.png"
+link = "twitter.com"

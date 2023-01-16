@@ -1,16 +1,5 @@
-baseURL = 'http://example.org/'
-languageCode = 'fr'
-defaultContentLanguage = "fr"
-title = 'Ulysse();'
 
-[params]
-name = "Ulysse"
-dateOfBirth = 2005-05-06
-localisation = "Poitiers"
-phone = "01.02.03.04.05"
-email = "somemail@mailbox.com"
-
-presentation  = """Je suis passioner de developement et plus géneralement\
+presentation  = """English thing Je suis passioner de developement et plus géneralement\
     d'informatique. J'apprend exclusivement au auto-didacte. Pour le moment\
     je fait exclusivement des projet personne personne ou je me donne aucune\
     limite. J'essait un maximum de chose de façon a savoir se qui me plait\
@@ -19,31 +8,9 @@ presentation  = """Je suis passioner de developement et plus géneralement\
     l'informatique (haut niveau comme bas niveau) je suis en capaciter de\
     m'addapter très rapidement."""
 
-homeProjects = ["better-bus", "better-bus", "better-bus"]
-
-[[params.languages]]
-name = { en = "French", fr = "Français" }
-level = "native"
-levelBar = 100
-
-[[params.languages]]
-name = { en = "English", fr = "Anglais" }
-level = "B1"
-levelBar = 50
 
 
-[[params.socials]]
-name = "Github"
-logo = "https://img.icons8.com/material-rounded/512/github.png"
-link = "https://github.com/Bubulleux"
-
-[[params.socials]]
-name = "Twitter"
-logo = "https://img.icons8.com/ios/512/twitter.png"
-link = "twitter.com"
-
-
-[[params.skills]]
+[[skills]]
 name = "C++"
 img = "img/skills/cpp.png"
 infos = """Je suis fort en c++ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium\
@@ -55,7 +22,7 @@ infos = """Je suis fort en c++ numquam blanditiis harum quisquam eius sed odit f
          sapiente officiis modi at sunt excepturi expedita sint? Sed quibusda"""
 
 
-[[params.skills]]
+[[skills]]
 name = "C++"
 img = "img/skills/cpp.png"
 infos = """Je suis fort en c++ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium\
@@ -68,7 +35,7 @@ infos = """Je suis fort en c++ numquam blanditiis harum quisquam eius sed odit f
 
 
 
-[[params.skills]]
+[[skills]]
 name = "C++"
 img = "img/skills/cpp.png"
 infos = """Je suis fort en c++ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium\

@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr'
+defaultContentLanguage = "fr"
+title = 'Ulysse();'
+
+[[params.languages]]
+name = { en = "French", fr = "Français" }
+level = "native"
+levelBar = 100
+
+[[params.languages]]
+name = { en = "English", fr = "Anglais" }
+level = "B1"
+levelBar = 50
+
+
+
+

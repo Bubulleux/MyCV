@@ -1,9 +1,7 @@
-main > .home-section{
+.home-section{
     padding: 20px 20px;
-    overflow: auto;
     margin: 10px 0px;
     border-radius: 30px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 
@@ -16,21 +14,36 @@ main > .home-section{
         font-size: 1.3em;
         line-height: 1.8em;
     }
+    
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
-.quick-info {
-    margin: 0px 30px 0px 0px;
-    flex-grow: 2;
-    white-space: nowrap;
-}
-
-.skills {
+#presentation {
     display: flex;
+
+    div {
+        border: 5px solid $fg_color-1;
+        owerflow: auto;
+        margin: 5px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .quick-info {
+        display: flex;
+    }
+    ul {
+    }
+    li {
+        margin: 20px 0px;
+    }
 }
 
-.home-section ul {
-    list-style: none;
-
+#skills {
+    display: flex;
     .skill {
         background-color: $fg-color-1;
         display: flex;
@@ -51,3 +64,4 @@ main > .home-section{
         height: 60px;
     }
 }
+
