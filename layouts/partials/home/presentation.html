@@ -1,18 +1,22 @@
 <section class="home-section" id="presentation">
-    <div class="quick-info">
-        <ul>
-            {{ with .Site.Params }}
-            <li>{{ T "name" }}</br><b> {{ .name }}</b></li>
-            <li>{{ T "age" }}</br><b id="age-span">{{ .birthDate }}</b>
-                <b> {{ T "years" }}</b></li>
-            <li>{{ T "localisation" }}</br><b> {{ .localisation }}</b></li>
-            <li>{{ T "phone" }}</br><b> {{ .phone }}</b></li>
-            <li>{{ T "email" }}</br><b> {{ .email }}</b></li>
-            {{ end }}
-        </ul>
+    <div class="gradient-box">
+        <div class="quick-info">
+            <ul>
+                {{ with .Site.Params }}
+                <li>{{ T "name" }}</br><b> {{ .name }}</b></li>
+                <li>{{ T "age" }}</br><b id="age-span">{{ .birthDate }}</b>
+                    <b> {{ T "years" }}</b></li>
+                <li>{{ T "localisation" }}</br><b> {{ .localisation }}</b></li>
+                <li>{{ T "phone" }}</br><b> {{ .phone }}</b></li>
+                <li>{{ T "email" }}</br><b> {{ .email }}</b></li>
+                {{ end }}
+            </ul>
+        </div>
     </div>
-    <div class="detail-info">
-        <span class="section-title">{{ T "presentation" }}</span>
-        <p>{{ .Site.Params.presentation }}</p>
+    <div class="gradient-box">
+        <div class="detail-info">
+            <b class="section-title">{{ T "presentation" }}</b>
+            <p>{{ .Site.Params.presentation }}</p>
+        </div>
     </div>
 </section>

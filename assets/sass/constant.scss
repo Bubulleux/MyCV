@@ -1,11 +1,19 @@
 $font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+// Color palettes
+$color-1: #0d1b2a;
+$color-2: #1b263b;
+$color-3: #415A77;
+$color-4: #778DA9;
+$color-5: #E0E1DD55;
+
 $font-color: #ccc;
-$bg-color: #1c2326;
-$fg-color-1: #2f3b40;
-$fg-color-2: #777777;
-$shadow-color: #000a;
-$shadow: 1px 1px 5px 1px $shadow-color;
+$bg-color: $color-1;
+$bg-gradient: linear-gradient(135deg , $color-3 0%, $bg-color 100%);
+$fg-color-1: $color-3;
+$fg-color-2: $color-4;
+$shadow-color: $color-5;
+$shadow: 0px 0px 5px 1px $shadow-color;
 
 $color-section-odd: #d1b794;
 $color-section-even: #c1a784;
@@ -13,3 +21,4 @@ $color-section-even: #c1a784;
 $header-bg: #000000;
 
 $project-summary-height: 300px;
+
