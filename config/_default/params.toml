@@ -3,6 +3,7 @@ birthDate = 2005-05-06
 localisation = "Poitiers"
 phone = "01.02.03.04.05"
 email = "somemail@mailbox.com"
+profilPick = "img/profil.jpeg"
 
 homeProjects = ["better-bus", "better-bus", "better-bus"]
 

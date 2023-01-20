@@ -1,5 +1,6 @@
 <section class="home-section" id="presentation">
-    <div class="gradient-box">
+    <h1>Bienvenue sur mon site</h1>
+    <div id="content">
         <div class="quick-info">
             <ul>
                 {{ with .Site.Params }}
@@ -12,10 +13,8 @@
                 {{ end }}
             </ul>
         </div>
-    </div>
-    <div class="gradient-box">
         <div class="detail-info">
-            <b class="section-title">{{ T "presentation" }}</b>
+            <h1 class="section-title">{{ T "presentation" }}</h1>
             <p>{{ .Site.Params.presentation }}</p>
         </div>
     </div>

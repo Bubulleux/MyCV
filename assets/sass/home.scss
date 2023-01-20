@@ -22,23 +22,43 @@
 }
 
 #presentation {
-    display: flex;
-    justify-content: center;
     min-height: 85vh;
+    margin-left: 130px;
+
+    &> h1 {
+        font-size: 3em;
+    }
+}
+
+#presentation > #content {
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
     
-    .gradient-box {
-        owerflow: auto;
+    &>div {
         margin: 5px;
         padding: 15px 30px 15px 15px;
-        border-radius: 20px;
         max-width: 700px;
-        // box-shadow: $shadow;
-        // background-color: $fg-color-1;
+        border: 0px solid;
+        border-left-width: 5px;
+        border-image: linear-gradient(180deg, $fg-color-2 0%, $fg-color-1 100%) 1;
+    }
+
+    #profile-pick , img {
+        max-width: 300px;
+        border-radius: 30px;
     }
     
     .quick-info {
-        margin-right: 15%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     li {
