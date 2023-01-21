@@ -3,10 +3,19 @@
         {{ $image := resources.Get .Params.thumbnail }}
         <img src="{{ $image.RelPermalink }}" height="auto" width="auto">
     </div>
-    <div>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-        <a href="{{ .Permalink }}">Show More</a>
+    <div class="detail">
+        <header>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
+        </header>
+        <footer>
+            <a href="{{ .Permalink }}">Show More</a>
+            <ul class="tag-list">
+                {{ range (.GetTerms "tags") }}
+                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+                {{ end }}
+            </ul>
+        </footer>
     </div>
 </div>
 

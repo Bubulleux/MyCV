@@ -4,11 +4,11 @@
 
 * {
     font-family: $font-family;
-    color: $font-color;
+    color: $white;
 }
 
 html > body {
-    background-color: $bg-color;
+    background-color: $background-0;
     margin: 0;
     padding: 0;
 }
@@ -18,9 +18,10 @@ main {
 }
 
 a {
-    color: black;
+    color: $primary;
+    font-weight: bold;
     transition: color 200ms;
     &:hover {
-        color: #333;
+        color: $primary-light;
     }
 }

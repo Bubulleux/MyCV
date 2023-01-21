@@ -19,3 +19,9 @@ other = "Adress mail:"
 
 [presentation]
 other = "Presenation:"
+
+[myProjects]
+other = "Mes projets:"
+
+[moreProjects]
+other = "Voire plus"
