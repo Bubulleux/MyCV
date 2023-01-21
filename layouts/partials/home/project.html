@@ -1,6 +1,6 @@
 <section class="home-section" id="projects">
     <h2>{{ T "myProjects" }}</h2>
-    <ul>
+    <ul class="project-list">
         {{ $projects := .Site.Params.homeProjects }}
         {{ $portfolio := .Site.GetPage "/portfolio" }}
         {{ range $projects }}
@@ -11,6 +11,6 @@
         {{ end }}
     </ul>
     <div>
-        <a href="/portfolio">{{ T "moreProjects" }}</a>
+        <a href="/portfolio">{{ T "moreProjects" }}<a>
     </div>
 </section>
