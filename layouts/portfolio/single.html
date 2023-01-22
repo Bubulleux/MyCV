@@ -1,5 +1,22 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<a href="{{ .Params.link }}" target="_blank">Lien</a>
-{{ .Content }}
+<article id="project-content">
+    <div id="project-head">
+        <h1 class="title">{{ .Title }}</h1>
+    </div>
+    <div class="project-body">
+        <div>
+        {{ .Content }}
+        </div>
+        <aside>
+            {{ with .Params }}
+            {{ if .sourceCode }}
+            <a href="{{ .sourceCode }}" target="_blank">{{ T "sourceCode" }}</a>
+            {{ end }}
+            {{ if .download }}
+            <a href="{{ .download }}" target="_blank">{{ T "download" }}</a>
+            {{ end }}
+            {{ end }}
+        </aside>
+    </div>
+</article>
 {{ end }}

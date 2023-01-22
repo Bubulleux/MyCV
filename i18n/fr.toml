@@ -25,3 +25,9 @@ other = "Mes projets:"
 
 [moreProjects]
 other = "Voire plus"
+
+[sourceCode]
+other = "Code Source"
+
+[download]
+other = "Télecharger"

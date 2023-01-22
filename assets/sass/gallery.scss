@@ -1,0 +1,19 @@
+.images-gallery {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+    padding: 0;
+
+    li {
+        padding: 10px;
+    }
+    img {
+        max-height: 400px;
+        max-width: 400px;
+        transition: filter 100ms;
+        &:hover {
+            filter: brightness(90%);
+        }
+    }
+}
