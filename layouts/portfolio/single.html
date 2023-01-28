@@ -2,12 +2,7 @@
 <article id="project-content">
     <div id="project-head">
         <h1 class="title">{{ .Title }}</h1>
-    </div>
-    <div class="project-body">
         <div>
-        {{ .Content }}
-        </div>
-        <aside>
             {{ with .Params }}
             {{ if .sourceCode }}
             <a href="{{ .sourceCode }}" target="_blank">{{ T "sourceCode" }}</a>
@@ -16,7 +11,12 @@
             <a href="{{ .download }}" target="_blank">{{ T "download" }}</a>
             {{ end }}
             {{ end }}
-        </aside>
+        </div>
+    </div>
+    <div class="project-body">
+        <div>
+        {{ .Content }}
+        </div>
     </div>
 </article>
 {{ end }}
