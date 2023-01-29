@@ -6,10 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &>li {
         margin: 10px 0px;
-        display: flex;
-        justify-content: center;
+        width: 100%;
         max-width: 1000px;
     }
 }
@@ -21,6 +21,7 @@
     box-shadow: $shadow;
     border-radius: 10px;
     padding: 10px;
+    width: 100%;
 
     .detail {
         display: flex;
@@ -75,9 +76,8 @@
     }
 }
 
-#project-content {
-
-    #project-head {
+.project-content {
+    .project-head {
         background: $background-1;
         padding-left: 40px;
         border-radius: 0px 0px 30px 30px;

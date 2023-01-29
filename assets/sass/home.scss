@@ -11,7 +11,7 @@
 
 }
 
-#presentation {
+.presentation {
     min-height: 85vh;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
     }
 }
 
-#presentation > #content {
+.presentation > .content {
     display: flex;
     justify-content: left;
     align-items: stretch;
@@ -44,11 +44,6 @@
         border: 0px solid;
         border-left-width: 5px;
         border-image: linear-gradient(180deg, $primary 0%, $primary-dark 100%) 1;
-    }
-
-    #profile-pick , img {
-        max-width: 300px;
-        border-radius: 30px;
     }
     
     .quick-info {
@@ -72,7 +67,7 @@
     }
 }
 
-#skills {
+.home-section.skills {
     display: flex;
     .skill {
         background-color: $background-1;
@@ -95,7 +90,7 @@
     }
 }
 
-#projects {
+.home-section.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
