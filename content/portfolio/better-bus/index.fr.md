@@ -3,7 +3,7 @@ title: "Better Bus"
 tags: ["Dart", "Flutter"]
 sourceCode: "https://github.com/Bubulleux/better-bus-v2"
 download: "https://github.com/Bubulleux/better-bus-v2/releases/latest"
-thumbnail: "img/portfolio/better-bus/logo.png"
+thumbnail: "/thumbnail.png"
 ---
 
 # Better bus, qu'es que c'est?

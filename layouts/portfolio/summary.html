@@ -1,8 +1,7 @@
 <div class="project-summary">
     <div class="thumbnail">
         {{ if .Params.thumbnail }}
-        {{ $image := resources.Get .Params.thumbnail }}
-        <img src="{{ $image.RelPermalink }}" height="auto" width="auto">
+        <img src="{{ path.Dir .RelPermalink}}{{ .Params.thumbnail }}" height="auto" width="auto">
         {{ end }}
     </div>
     <div class="detail">

@@ -2,7 +2,7 @@
 title: "Connect 4 IA"
 tags: ["C++"]
 sourceCode: "https://github.com/Bubulleux/Connect4-ia-Cpp"
-thumbnail: ""
+thumbnail: "/screenshot (1).png"
 ---
 
 # Presentation

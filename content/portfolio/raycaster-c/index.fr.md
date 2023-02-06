@@ -1,8 +1,8 @@
 ---
 title: "Raycaster-C"
-tag: ["C"]
+tags: ["C"]
 sourceCode: "https://github.com/Bubulleux/Raycast-C"
-thumbnail: ""
+thumbnail: "/screenshot (3).png"
 ---
 
 # Presentation
