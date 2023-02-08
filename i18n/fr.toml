@@ -31,3 +31,6 @@ other = "Code Source"
 
 [download]
 other = "Télecharger"
+
+[welcome]
+other = "Bienvenue sur mon site"

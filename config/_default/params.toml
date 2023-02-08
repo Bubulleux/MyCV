@@ -4,6 +4,7 @@ localisation = "Poitiers"
 phone = "01.02.03.04.05"
 email = "somemail@mailbox.com"
 profilPick = "img/profil.jpeg"
+homeHeaderBackground = "img/home_header_background.png"
 
 homeProjects = ["better-bus", "better-bus", "better-bus"]
 

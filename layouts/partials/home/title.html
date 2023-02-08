@@ -1,0 +1,15 @@
+<section class="home-section home-header">
+    <div class="welcome-text">
+        <h1>{{ T "welcome" }}</h1>
+        <p>
+            Je m'appelle Ulysse aka Bubulle.<br/>
+            Je suis developeur autodidacte et passioner.
+        </p>
+    </div>
+    <div class="background">
+        {{ if .Site.Params.homeHeaderBackground }}
+        {{ $image := resources.Get .Site.Params.homeHeaderBackground }}
+        <img src="{{ $image.RelPermalink}}">
+        {{ end }}
+        </img>
+</section>
