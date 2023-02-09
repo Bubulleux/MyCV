@@ -1,0 +1,49 @@
+.animated-on-scroll {
+    position: relative;
+    opacity: 0;
+}
+
+.animated-on-scroll.animate {
+    opacity: 1;
+    &.fade-from-bottom {
+        animation: fade-bottom .6s ease-out;
+    }
+    &.fade-from-left {
+        animation: fade-left .6s ease-out;
+    }
+    &.fade-from-right {
+        animation: fade-right .6s ease-out;
+    }
+}
+
+@keyframes fade-bottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
