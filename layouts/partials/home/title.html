@@ -9,7 +9,8 @@
     <div class="background">
         {{ if .Site.Params.homeHeaderBackground }}
         {{ $image := resources.Get .Site.Params.homeHeaderBackground }}
-        <img src="{{ $image.RelPermalink}}">
+        <img src="{{ $image.RelPermalink}}"></img>
         {{ end }}
-        </img>
+    </div>
 </section>
+
