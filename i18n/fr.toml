@@ -34,3 +34,6 @@ other = "Télecharger"
 
 [welcome]
 other = "Bienvenue sur mon site"
+
+[projects]
+other="Projets"
