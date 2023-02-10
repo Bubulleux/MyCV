@@ -5,7 +5,7 @@
 .home-header {
     display: flex;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh;
 
 
     &>.welcome-text {
@@ -34,7 +34,7 @@
 
 .presentation {
     display: flex;
-    height: 70vh;
+    min-height: 70vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -93,25 +93,59 @@
 }
 
 .home-section.skills {
-    display: flex;
-    .skill {
-        background-color: $background-1;
-        display: flex;
+    padding: 0px 100px;
+    margin-bottom: 100px;
+}
+
+.home-section.skills .skills-groups{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
+
+    .skills-group {
         margin: 20px;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: $shadow;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $background-1;
+        &>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
     }
 
-    p {
-        font-size: 0.9em;
+    .skill {
+        display: flex;
+        margin: 10px 0px;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+            margin: 0px;
+        }
+        .range-box {
+            width: 150px;
+            height: 10px;
+            background-color: $background-0;
+            border-radius: 10px;
+            .range-bar {
+                background-color: $primary;
+                border-radius: 10px;
+                height: 100%;
+                &.animate {
+                    transform-origin: center left;
+                    animation: skill-bar-animation 0.5s ease-out;
+                }
+            }
+        }
     }
-    h3 {
-        font-size: 1;
+}
+
+@keyframes skill-bar-animation {
+    from {
+        transform: scaleX(0%);
     }
-    img {
-        width: 60px;
-        height: 60px;
+    to {
+        transform: scaleX(100%);
     }
 }
 

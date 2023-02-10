@@ -3,9 +3,13 @@ function checkReveal() {
     var windowHeight = window.innerHeight;
 
     for (var i = 0; i < elements.length; i++) {
-        var element = elements[i];
-        if (element.getBoundingClientRect().top < windowHeight - 150) {
-            element.classList.add("animate");
+        let element = elements[i];
+        if (element.getBoundingClientRect().top < windowHeight && 
+            !element.classList.contains("animated")) {
+            element.classList.add("animated");
+            setTimeout(() => {
+                element.classList.add("animate");
+            }, Math.floor(Math.random() * 200 + 200));
         }
     }
 }

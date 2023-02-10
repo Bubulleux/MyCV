@@ -1,20 +1,23 @@
-{{ with .Site.Params.skills }}
+{{ with .Site.Params.skillsGroup }}
 <section class="home-section skills">
-    <ul>
-        {{ range sort . "name" }}
-            <li>
-                <div class="skill">
-                    <div class="img">
-                        {{ $image := resources.Get .img }}
-                        <img src="{{  $image.RelPermalink  }}"></img>
+    <div class="skills-groups">
+        {{ range . }}
+        <div class="skills-group animated-on-scroll fade-from-bottom" 
+            {{ if .color }} style="background-color: {{ .color }};" {{ end }}>
+            <h3>{{ .name }}</h3>
+            <ul class="skills">
+                {{ range .skill }}
+                <li class="skill" {{if .comment}} title="{{.comment}}"{{end}}>
+                    <label>{{ .name }}</label>
+                    <div class="range-box">
+                        <div class="range-bar animated-on-scroll" 
+                            style="width: calc({{ .note }} * 100%);"/>
                     </div>
-                    <div class="infos">
-                        <h3>{{ .name }}</h3>
-                        <p>{{ .infos }}</p>
-                    </div>
-                </div>
-            </li>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
         {{ end }}
-    </ul>
+    </div>
 </section>
 {{ end }}
