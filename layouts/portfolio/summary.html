@@ -1,22 +1,18 @@
-<div class="project-summary">
+<a class="project-summary" href="{{ .Permalink }}">
     <div class="thumbnail">
         {{ if .Params.thumbnail }}
-        <img src="{{ path.Dir .RelPermalink}}{{ .Params.thumbnail }}" height="auto" width="auto">
+        <img src="{{ path.Dir .RelPermalink}}{{ .Params.thumbnail }}" height="auto" width="auto"/>
         {{ end }}
     </div>
     <div class="detail">
-        <header>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <p>{{ .Summary }}</p>
-        </header>
-        <footer>
-            <a href="{{ .Permalink }}">Show More</a>
-            <ul class="tag-list">
-                {{ range (.GetTerms "tags") }}
-                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-                {{ end }}
-            </ul>
-        </footer>
+        <h2>{{ .Title }}</h2>
+        <p>Une resumer d'une application asser court pour éviter
+        un text couper</p>
+        <ul class="tag-list">
+            {{ range (.GetTerms "tags") }}
+            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        </ul>
     </div>
-</div>
+</a>
 

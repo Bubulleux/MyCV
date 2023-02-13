@@ -2,10 +2,8 @@
     list-style: none;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
 
     &>li {
         margin: 10px 0px;
@@ -16,28 +14,15 @@
 
 .project-summary {
     background-color: $background-1;
-    height: 250px;
-    display: flex;
+
     box-shadow: $shadow;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
 
     .detail {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 0px 10px 0px;
     }
 
-    header {
-        h2, p {
-            margin: 0;
-        }
-        h2 {
-            margin-bottom: 10px;
-        }
-    }
     footer {
         display: flex;
         flex-direction: row;
