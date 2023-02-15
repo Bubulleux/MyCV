@@ -1,6 +1,6 @@
-<ul class="images-gallery">
+<div class="images-gallery">
     {{ range .Params }}
-    <li><a href="{{ . }}"><img src="{{ . }}" ></img></a></li>
+    <a href="{{ . }}"><img src="{{ . }}" ></img></a>
     {{ end }}
-</ul>
+</div>
 

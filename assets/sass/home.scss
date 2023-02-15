@@ -39,6 +39,7 @@
     align-items: center;
 
     min-height: 70vh;
+    margin-bottom: 10rem;
 
     &> h1 {
         font-size: 3rem;
@@ -104,6 +105,7 @@
 .home-section.skills .skills-groups{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
+    margin-bottom: 10rem;
 
     .skills-group {
         margin: 20px;

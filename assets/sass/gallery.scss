@@ -1,16 +1,15 @@
 .images-gallery {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: 1rem;
     padding: 0;
 
-    li {
-        padding: 10px;
+    a {
+        padding: 0.5rem;
     }
     img {
-        max-height: 400px;
-        max-width: 400px;
+        max-height: 100%;
+        max-width: 100%;
         transition: filter 100ms;
         &:hover {
             filter: brightness(90%);

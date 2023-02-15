@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="projects-list-title">
-    <h2>{{ T "myProjects" }}</h2>
+    <h3>{{ T "tagedProjectsTtile" }}</h3><h2>{{ .Title }}</h2>
 </div>
 <ul class="project-list">
-    {{ range .Pages }}
+    {{ range .Data.Pages }}
     <li>
         {{ .Render "summary" }}
     </li>

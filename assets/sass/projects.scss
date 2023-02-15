@@ -1,9 +1,17 @@
+.projects-list-title {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    h2 {
+        margin: 0;
+    }
+}
 .project-list {
     list-style: none;
     margin: auto;
-    padding: 3rem;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
 }
 
 .project-summary {
@@ -11,6 +19,7 @@
     box-shadow: $shadow;
     padding: 1rem;
     margin: 0.5rem;
+    max-width: 30rem;
 
 
     img {

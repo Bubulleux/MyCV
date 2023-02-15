@@ -21,7 +21,7 @@ other = "Adress mail:"
 other = "Presenation:"
 
 [myProjects]
-other = "Mes projets:"
+other = "Mes projets"
 
 [moreProjects]
 other = "Voire plus"
@@ -40,3 +40,6 @@ other="Projets"
 
 [tags]
 other="Tags: "
+
+[tagedProjectsTtile]
+other="Projet tagé avec : "
