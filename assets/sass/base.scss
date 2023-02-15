@@ -17,10 +17,9 @@ html > body {
 
 a {
     color: $primary;
-    font-weight: bold;
-    transition: color 200ms;
+    text-decoration: none;
     &:hover {
-        color: $primary-light;
+        text-decoration: underline;
     }
 }
 
@@ -32,11 +31,11 @@ a.button {
     background-color: $primary-dark;
     padding: 0.5em 1em;
     margin: 0.5em;
-    border-radius: 1em;
+    border-radius: 0.8em;
     box-shadow: $shadow;
     transition: background-color 100ms;
     
     &:hover {
-        background-color: $primary-light;
+        background-color: $primary;
     }
 }

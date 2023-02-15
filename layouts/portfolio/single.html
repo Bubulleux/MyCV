@@ -2,7 +2,7 @@
 <article class="project-content">
     <div class="project-head">
         <h1 class="title">{{ .Title }}</h1>
-        <div>
+        <div class="related-links">
             {{ with .Params }}
             {{ if .sourceCode }}
             <a class="button" chref="{{ .sourceCode }}" target="_blank">
@@ -18,7 +18,15 @@
         </div>
     </div>
     <div class="project-body">
-        <div>
+        {{ if .GetTerms "tags" }}
+        <div class="tag-list">
+            {{ T "tags" }}
+            {{ range (.GetTerms "tags") }}
+            <a class="tag-btn" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+        <div class="main-content">
         {{ .Content }}
         </div>
     </div>

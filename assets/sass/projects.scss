@@ -12,25 +12,6 @@
     padding: 1rem;
     margin: 0.5rem;
 
-    .tag-list {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
-
-    .tag-btn {
-        display: inline-block;
-        color: $white;
-        text-decoration: none;
-        font-weight: normal;
-        background-color: $primary-dark;
-        border-radius: 2rem;
-        padding: 0.4rem 0.7rem;
-        
-        &:hover {
-            background-color: $primary;
-        }
-    }
 
     img {
         max-height: 100%;
@@ -48,37 +29,64 @@
     }
 }
 
+.tag-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+a.tag-btn {
+    font-size: 0.9rem;
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    font-weight: normal;
+    background-color: $primary-dark;
+    border-radius: 2rem;
+    padding: 0.2rem 0.4rem;
+
+    &:hover {
+        background-color: $primary;
+    }
+}
+
 .project-content {
     .project-head {
-        background: $background-1;
-        padding-left: 40px;
-        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         h1 {
-            font-size: 3em;
+            font-size: clamp(4rem, 10vw, 6rem);
             margin: 0px;
-            padding: 10px 0px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .tag-list {
+            margin-bottom: 2rem;
         }
 
-        &>div {
+        .related-links {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-block: 2rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
         }
     }
 
     .project-body {
-        display: flex;
-        justify-content: center;
         &>div {
             background-color: $background-1;
-            border-radius: 10px;
-            margin: 10px 40px;
-            padding: 20px;
-            max-width: 800px;
+            border-radius: 1rem;
+            padding: 1rem;
+            max-width: 80ch;
+            margin: 1rem auto;
 
             h1, h2, h3, h4, h5, h6 {
-                margin: 30px 0px;
-                padding-bottom: 5px;
-                border: solid $background-2 0px;
+                margin: 1.5em 0;
+                padding-bottom: 0.3em;
+                border: solid $background-2 0;
                 border-bottom-width: 1px;
             }
         }

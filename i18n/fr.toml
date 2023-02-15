@@ -37,3 +37,6 @@ other = "Bienvenue sur mon site"
 
 [projects]
 other="Projets"
+
+[tags]
+other="Tags: "
