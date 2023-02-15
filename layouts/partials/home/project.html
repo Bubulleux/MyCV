@@ -1,5 +1,7 @@
 <section class="home-section projects">
-    <h2>{{ T "myProjects" }}</h2>
+    <div class="projects-title">
+        <h2>{{ T "myProjects" }}</h2>
+    </div>
     <ul class="project-list">
         {{ $projects := .Site.Params.homeProjects }}
         {{ $portfolio := .Site.GetPage "/portfolio" }}
@@ -8,9 +10,9 @@
                 {{ $page := $portfolio.GetPage . }}
                 {{ $page.Render "summary" }}
             </li>
-        {{ end }}
+            {{ end }}
     </ul>
-    <div>
-        <a href="/portfolio">{{ T "moreProjects" }}<a>
+    <div class="show-more">
+        <a class="button" href="/portfolio">{{ T "moreProjects" }}</a>
     </div>
 </section>

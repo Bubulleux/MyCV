@@ -1,63 +1,50 @@
 .project-list {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
-
-    &>li {
-        margin: 10px 0px;
-        width: 100%;
-        max-width: 1000px;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .project-summary {
     background-color: $background-1;
-
     box-shadow: $shadow;
+    padding: 1rem;
+    margin: 0.5rem;
 
-    .detail {
+    .tag-list {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        gap: 0.5rem;
+        flex-wrap: wrap;
     }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: right;
-            a {
-                padding: 5px;
-                margin: 0px 10px 0px 0px;
-                color: $white;
-                text-decoration: none;
-                font-weight: normal;
-                background-color: $primary-dark;
-                border-radius: 50px;
-                padding: 5px 10px;
-                &:hover {
-                    background-color: $primary;
-                }
-            }
+    .tag-btn {
+        display: inline-block;
+        color: $white;
+        text-decoration: none;
+        font-weight: normal;
+        background-color: $primary-dark;
+        border-radius: 2rem;
+        padding: 0.4rem 0.7rem;
+        
+        &:hover {
+            background-color: $primary;
         }
     }
 
     img {
         max-height: 100%;
         max-width: 100%;
-        border-radius: 10px;
-        //border: 2px solid $white;
+        border-radius: 1rem;
     }
 
     .thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         aspect-ratio: 1;
-        height: 100%;
-        margin-right: 20px;
+        max-height: 15rem;
+        margin: auto;
     }
 }
 
@@ -75,18 +62,6 @@
         &>div {
             display: flex;
             flex-direction: row;
-            a {
-                color: $black;
-                font-weight: normal;
-                text-decoration: none;
-                background: $primary;
-                padding: 10px;
-                margin: 5px;
-                border-radius: 10px;
-                &:hover {
-                    background-color: $primary-light;
-                }
-            }
         }
     }
 

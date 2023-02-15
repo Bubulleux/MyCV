@@ -3,7 +3,7 @@
     <div class="skills-groups">
         {{ range . }}
         <div class="skills-group animated-on-scroll fade-from-bottom" 
-            {{ if .color }} style="background-color: {{ .color }};" {{ end }}>
+            {{ if .color }} style="--bar-color: {{ .color }};" {{ end }}>
             <h3>{{ .name }}</h3>
             <ul class="skills">
                 {{ range .skill }}

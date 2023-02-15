@@ -6,19 +6,19 @@
 .animated-on-scroll.animate {
     opacity: 1;
     &.fade-from-bottom {
-        animation: fade-bottom .6s ease-out;
+        animation: fade-bottom $animation-time ease-out;
     }
     &.fade-from-left {
-        animation: fade-left .6s ease-out;
+        animation: fade-left $animation-time ease-out;
     }
     &.fade-from-right {
-        animation: fade-right .6s ease-out;
+        animation: fade-right $animation-time ease-out;
     }
 }
 
 @keyframes fade-bottom {
     from {
-        transform: translateY(100px);
+        transform: translateY($animation-scale);
         opacity: 0;
     }
     to {
@@ -29,7 +29,7 @@
 
 @keyframes fade-left {
     from {
-        transform: translateX(-100px);
+        transform: translateX(- $animation-scale);
         opacity: 0;
     }
     to {
@@ -39,7 +39,7 @@
 }
 @keyframes fade-right {
     from {
-        transform: translateX(100px);
+        transform: translateX($animation-scale);
         opacity: 0;
     }
     to {

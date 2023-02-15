@@ -6,7 +6,7 @@ email = "somemail@mailbox.com"
 profilPick = "img/profil.jpeg"
 homeHeaderBackground = "img/home_header_background.png"
 
-homeProjects = ["better-bus", "better-bus", "better-bus"]
+homeProjects = ["better-bus", "bacterio", "raycaster-c", "connect-4"]
 
 [[socials]]
 name = "Github"

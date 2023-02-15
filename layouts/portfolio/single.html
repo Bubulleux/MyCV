@@ -5,10 +5,14 @@
         <div>
             {{ with .Params }}
             {{ if .sourceCode }}
-            <a href="{{ .sourceCode }}" target="_blank">{{ T "sourceCode" }}</a>
+            <a class="button" chref="{{ .sourceCode }}" target="_blank">
+                {{ T "sourceCode" }}
+            </a>
             {{ end }}
             {{ if .download }}
-            <a href="{{ .download }}" target="_blank">{{ T "download" }}</a>
+            <a class="button" href="{{ .download }}" target="_blank">
+                {{ T "download" }}
+            </a>
             {{ end }}
             {{ end }}
         </div>

@@ -1,5 +1,6 @@
 .home-section {
     border-radius: 3rem 3rem 0 0;
+    
 }
 
 .home-header {
@@ -63,7 +64,6 @@
     padding: 2rem;
     border-radius: 3rem;
     margin: 0rem;
-    max-width: 120ch;
     
     &>div {
         margin: 5px;
@@ -84,6 +84,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        max-width: 75ch;
     }
 
     li {
@@ -109,6 +110,7 @@
         padding: 20px;
         border-radius: 20px;
         background-color: $background-1;
+        --bar-color: #{$primary};
         &>ul {
             list-style: none;
             margin: 0;
@@ -131,7 +133,7 @@
             background-color: $background-0;
             border-radius: 10px;
             .range-bar {
-                background-color: $primary;
+                background-color: var(--bar-color);
                 border-radius: 10px;
                 height: 100%;
                 &.animate {
@@ -155,9 +157,15 @@
 .home-section.projects {
     background-color: $background-2;
 
-    &>div {
+    .projects-title {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
 
-        margin: 20px 0px;
-        font-size: 1.3em;
+    .show-more {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
     }
 }
