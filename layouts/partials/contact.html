@@ -1,0 +1,31 @@
+<div class="contact">
+    <ul class="infos-list">
+        {{ with .Site.Params }}
+        <li><i class="fa-solid fa-user"></i><b> {{ .name }}</b></li>
+        <li><i class="fa-solid fa-cake-candles"></i>
+            <b id="age-span">{{ .birthDate }}</b>
+            <b> {{ T "years" }}</b></li>
+        <li><i class="fa-solid fa-location-dot"></i><b> {{ .localisation }}</b></li>
+        <li>
+            <i class="fa-solid fa-phone"></i>
+            <b>{{ .phone }}</b>
+        </li>
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+            <b><a href="mailto:{{ .email }}">{{ .email }}</a></b>
+        </li>
+        {{ end }}
+    </ul>
+    <ul class="socials">
+        {{ range .Site.Params.socials }}
+        <li><a title="{{ .name }}" href="{{ .link }}" target="_blank">
+                <i class="{{ .icon }}"></i></a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ if .Site.Params.fileCV }}
+    {{ $file := resources.Get .Site.Params.fileCV }}
+    <a class="button" href="{{ $file.RelPermalink }}" target="_blank">
+        {{ T "myCV" }}</a>
+    {{ end }}
+</div>

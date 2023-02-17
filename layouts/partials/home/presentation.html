@@ -1,17 +1,6 @@
 <section class="home-section presentation">
     <div class="content animated-on-scroll fade-from-right">
-        <div class="quick-info">
-            <ul>
-                {{ with .Site.Params }}
-                <li>{{ T "name" }}</br><b> {{ .name }}</b></li>
-                <li>{{ T "age" }}</br><b id="age-span">{{ .birthDate }}</b>
-                    <b> {{ T "years" }}</b></li>
-                <li>{{ T "localisation" }}</br><b> {{ .localisation }}</b></li>
-                <li>{{ T "phone" }}</br><b> {{ .phone }}</b></li>
-                <li>{{ T "email" }}</br><b> {{ .email }}</b></li>
-                {{ end }}
-            </ul>
-        </div>
+        {{ partial "contact.html" . }}
         <div class="detail-info">
             <h1 class="section-title">{{ T "presentation" }}</h1>
             <p>{{ .Site.Params.presentation }}</p>

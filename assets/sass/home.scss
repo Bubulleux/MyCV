@@ -1,8 +1,3 @@
-.home-section {
-    border-radius: 3rem 3rem 0 0;
-    
-}
-
 .home-header {
     display: flex;
     align-items: flex-start;
@@ -47,13 +42,6 @@
     p {
         line-height: 1.8rem;
     }
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
 }
 
 .presentation > .content {
@@ -67,19 +55,14 @@
     margin: 0rem;
     
     &>div {
-        margin: 5px;
-        padding: 15px 30px 15px 15px;
+        margin: 0.5rem;
+        padding: 1rem;
+        padding-left: 1.5rem;
         border: 0px solid;
         border-left-width: 5px;
         border-image: linear-gradient(180deg, $primary 0%, $primary-dark 100%) 1;
     }
     
-    .quick-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .detail-info {
         flex: 1 0 40vw;
         display: flex;
@@ -88,12 +71,8 @@
         max-width: 75ch;
     }
 
-    li {
-        margin: 10px 0px;
-    }
-
-    b {
-        color: $primary;
+    .contact {
+        max-width: 20rem;
     }
 }
 
@@ -158,6 +137,7 @@
 
 .home-section.projects {
     background-color: $background-2;
+    border-radius: 3rem;
 
     .projects-title {
         display: flex;

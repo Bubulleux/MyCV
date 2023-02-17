@@ -5,15 +5,56 @@ phone = "01.02.03.04.05"
 email = "somemail@mailbox.com"
 profilPick = "img/profil.jpeg"
 homeHeaderBackground = "img/home_header_background.png"
+fileCV = "cv.pdf"
 
 homeProjects = ["better-bus", "bacterio", "raycaster-c", "connect-4"]
 
 [[socials]]
 name = "Github"
-logo = "https://img.icons8.com/material-rounded/512/github.png"
+icon = "fa-brands fa-github"
 link = "https://github.com/Bubulleux"
 
 [[socials]]
 name = "Twitter"
-logo = "https://img.icons8.com/ios/512/twitter.png"
-link = "twitter.com"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"
+[[socials]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com"

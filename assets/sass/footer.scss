@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    margin: 1rem;
+    margin-top: 5rem;
+    padding: 2rem 5rem;
+    justify-content: space-between;
+
+    background-color: $background-1;
+    border-radius: 5rem;
+
+    &>nav {
+        display: flex;
+        gap: 2rem;
+    }
+}

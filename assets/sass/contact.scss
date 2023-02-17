@@ -1,0 +1,18 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .infos-list {
+        line-height: 1.8rem;
+        li>i {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}
