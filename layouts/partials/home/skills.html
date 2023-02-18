@@ -5,13 +5,16 @@
         <div class="skills-group animated-on-scroll fade-from-bottom" 
             {{ if .color }} style="--bar-color: {{ .color }};" {{ end }}>
             <h3>{{ .name }}</h3>
+            {{ if .description }}
+            <p class="description">{{ .description }}</p>
+            {{ end }}
             <ul class="skills">
                 {{ range .skill }}
                 <li class="skill" {{if .comment}} title="{{.comment}}"{{end}}>
-                    <label>{{ .name }}</label>
                     <div class="range-box">
                         <div class="range-bar animated-on-scroll" 
-                            style="width: calc({{ .note }} * 100%);"/>
+                            style="width: calc({{ .note }} * 100%);"></div>
+                            <span>{{ .name }}</span>
                     </div>
                 </li>
                 {{ end }}

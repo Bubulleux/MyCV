@@ -16,16 +16,15 @@
         </li>
         {{ end }}
     </ul>
-    <ul class="socials">
+    <div class="socials">
         {{ range .Site.Params.socials }}
-        <li><a title="{{ .name }}" href="{{ .link }}" target="_blank">
+        <a title="{{ .name }}" href="{{ .link }}" target="_blank">
                 <i class="{{ .icon }}"></i></a>
-        </li>
         {{ end }}
-    </ul>
+    </div>
     {{ if .Site.Params.fileCV }}
     {{ $file := resources.Get .Site.Params.fileCV }}
-    <a class="button" href="{{ $file.RelPermalink }}" target="_blank">
-        {{ T "myCV" }}</a>
+    <a class="button cv-document" href="{{ $file.RelPermalink }}" target="_blank">
+        <i class="fa-solid fa-file"></i>  {{ T "myCV" }}</a>
     {{ end }}
 </div>

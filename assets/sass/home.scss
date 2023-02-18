@@ -44,9 +44,9 @@
     }
 }
 
+
 .presentation > .content {
     display: flex;
-    flex-flow: row wrap;
     justify-content: left;
     align-items: stretch;
     background: $background-1;
@@ -76,47 +76,61 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .presentation>.content {
+        flex-direction: column;
+        .contact {
+            max-width: none;
+        }
+    }
+}
+
 .home-section.skills {
     max-width: 100rem;
     margin-inline: auto;
 }
 
 .home-section.skills .skills-groups{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
     margin-bottom: 10rem;
 
     .skills-group {
-        margin: 20px;
-        padding: 20px;
-        border-radius: 20px;
+        max-width: 80ch;
+        margin-inline: auto;
+        margin-block: 2rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
         background-color: $background-1;
         --bar-color: #{$primary};
-        &>ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
     }
 
+    .skills {
+        display: grid;
+        font-size: 1.1rem;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        place-items: center;
+    }
     .skill {
-        display: flex;
-        margin: 10px 0px;
-        align-items: center;
-        justify-content: space-between;
-
-        label {
-            margin: 0px;
-        }
+        margin-block: 0.3rem;
         .range-box {
-            width: 150px;
-            height: 10px;
+            display: flex;
+            align-items: center;
+            width: 13em;
             background-color: $background-0;
             border-radius: 10px;
+            height: 1.5em;
+            position: relative;
+            z-index: 0;
+
+            span {
+                margin-left: 0.5em;
+            }
             .range-bar {
+                z-index: -1;
                 background-color: var(--bar-color);
                 border-radius: 10px;
-                height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
                 &.animate {
                     transform-origin: center left;
                     animation: skill-bar-animation 0.5s ease-out;

@@ -11,6 +11,11 @@ presentation  = """Je suis passioner de developement et plus géneralement\
 
 [[skillsGroup]]
 name = "Général"
+description = """Je suis très passioner par tout se qui touche au science et 
+particulièrement les Math. Mais si mon niveau n'est pas vraiment technique
+je comprend et connais beaucoup de chose particulièrement en Physique. Mon 
+expèrience a écrire tout type de programe me donne un bon niveau en Algorithmie
+"""
 color = "green"
     [[skillsGroup.skill]]
     name = "Algorithmie"
@@ -22,6 +27,11 @@ color = "green"
 
 [[skillsGroup]]
 name = "Language de programation"
+description = """Comme dit plus tôt je suis une personne assez curieuse quand
+il en vient a parler de sujet qui touche l'informatique. Cela ma permit 
+de toucher a plein de language de programation. Cette experience dans tout 
+c'est language me permet d'en apprendre encore de nouveaux avec grand faciliter.
+"""
 color = "blue"
     [[skillsGroup.skill]]
     name = "C"
@@ -58,26 +68,39 @@ color = "red"
     [[skillsGroup.skill]]
     name = "Hugo"
     note = 0.85
+
 [[skillsGroup]]
-name = "Frame work"
+name = "Outil"
+description = """Pour programer j'utilise essentielement des programe open-source
+et si possible qui ne sont pas possider par une grand companie. Même si j'ai 
+aussi la capaciter de m'adapter et d'utiliser certain outil comme VS code et 
+la Suite Jetbrain. Je code habituelement sous Arch linux avec NeoVim et je
+met tout monde code sur Github."""
     [[skillsGroup.skill]]
-    name = "Unity"
+    name = "Linux"
     note = 0.7
+
     [[skillsGroup.skill]]
-    name = "Nodejs"
-    note = 0.6
+    name = "Windows"
+    note = 0.9
+
     [[skillsGroup.skill]]
-    name = "Hugo"
+    name = "NeoVim"
+    note = 0.8
+
+    [[skillsGroup.skill]]
+    name = "Visual Studio Code"
+    note = 0.9
+
+    [[skillsGroup.skill]]
+    name = "Suit Jeibrain"
+    note = 0.8
+
+    [[skillsGroup.skill]]
+    name = "Git"
     note = 0.85
-[[skillsGroup]]
-name = "Frame work"
-color = "red"
+
     [[skillsGroup.skill]]
-    name = "Unity"
-    note = 0.7
-    [[skillsGroup.skill]]
-    name = "Nodejs"
-    note = 0.6
-    [[skillsGroup.skill]]
-    name = "Hugo"
-    note = 0.85
+    name = "Libre Office"
+    note = 0.95
+

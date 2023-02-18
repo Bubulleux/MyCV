@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
     .infos-list {
         line-height: 1.8rem;
         li>i {
@@ -13,6 +13,22 @@
         display: flex;
         flex-wrap: wrap;
         font-size: 2rem;
-        gap: 1rem;
+        gap: 1rem 1rem;
+        a {
+            background-color: $background-0;
+            padding: 0.5rem;
+            line-height: 32px;
+            border-radius: 0.5rem;
+            transition: background-color 200ms;
+            &:hover {
+                background-color: $background-2;
+            }
+        }
+    }
+
+    .cv-document {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
     }
 }
