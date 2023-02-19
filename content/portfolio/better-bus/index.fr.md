@@ -4,56 +4,64 @@ tags: ["Dart", "Flutter"]
 sourceCode: "https://github.com/Bubulleux/better-bus-v2"
 download: "https://github.com/Bubulleux/better-bus-v2/releases/latest"
 thumbnail: "/thumbnail.png"
+lang: fr
 ---
 
-# Better bus, qu'es que c'est?
+[l'application Vitalis] : https://play.google.com/store/apps/details?id=fr.catp.airweb.vitalis&hl=fr&gl=US&pli=1
 
-Better bus est une application mobile qui a été developer dans le but
-de donner une alternative a l'application Vitalis. Vitalis c'est l'entrepise
-qui s'occupe de réseau de transport en bus de la ville de Poitiers. Leur 
-application mobile fonction mais n'est pas agréable a utiliser. Better bus est
-la pour ça.
+# Better bus, qu'est-ce que c'est ?
 
-# C'est fonctionaliter
+Better Bus c'est simplement une application mobile qui a pour but de nous
+faciliter la vie quand l'on voyage en bus à Poitiers sur le réseau Vitalis.
+Elle a été développée comme une alternative à l'application [Vitalis] qui a été
+créée dans le même but. Cependant, Better Bus est beaucoup plus simple
+d'utilisation, beaucoup plus belle et avec certaines fonctionnalités très
+importantes que ne possède pas l'application Vitalis. 
 
-Better bus possède tout les fonctionaliter essenciel au voyage en bus c'est a
-dire:
-- La possibliter de consulter les horraire normalement prévue par Vitalis
-- La possibiliter de connaitre les prochain passage ce qui est une vision a
-court terme mais plus précie sur quand les bus arriveron
-- La possibiliter de trouver le meilleur itinéraire entre deux androit de 
-Poitiers de façon a savoir qu'elle bus prendre, où les prendre et quand les 
-prendre.
-- La possibiliter de connaitre les info traffic qui nous informe sur des
-changement imprévue sur le réseau celà peut être un retard ou une déviation
-sur le réseau ou l'arrète comple du réseau pour la journée suite a un incident
-majeur.
-- La possibliter de recevoire des notification quand une nouvelle info traffi
-arrive de façon a toujours être informer.
+# Ses fonctionnalités
 
-Tout c'est fonctionaliter cité sont déjà disponlible sur l'application mais
-de façon qui je trouve est beacoup moins érgonomique est estetique.
+Better bus possède toutes les fonctionnalités essentielles aux voyages en bus sur
+Poitiers, c'est-à-dire :
+- La possibilité de consulter les fiche horaires (les horaires fixes des Bus)
+- Les possibilités de consulter les prochains passages à un arrêt de bus pour
+  être au courant en cas de retard. 
+- Vous pouvez facilement trouver quel est le meilleur itinéraire pour aller
+  d'un point A vers un point B de Grand Poitiers.
+- Vous pouvez accéder aux Infos trafic du réseau de Bus pour toujours être au
+  courant en cas de retard ou de déviation.
+- Vous pouvez aussi activer la possibilité de recevoir des notifications quand
+  une nouvelle Info Trafic apparaît. Vous seriez avertis quand l'Info trafic
+  apparaît, quand elle est modifiée et quand elle devient active. 
 
-La fonctionaliter la plus importente a mon avis n'est pas dans l'applicaiton
-Vitalis. Cette fonctionaliter c'est la possibiliter de crée des raccourcie 
-vers des information consulter très régulièrment de façon a ne peut avoir
-a refaire a chaque le chemain pour y accéder. Il suffis de donner un arret de 
-bus et des ligne intéresser. Puis il apparais sur le menu principale un bouton
-qui amène directement a l'information voulue. Il y a aussi le possibiliter 
-d'ajouter un Widget a notre page d'aceuille pour rendre l'opération encore plus
-rapide.
+La plupart de ces fonctionnalités citées sont déjà disponibles sur
+l'application, mais de façon qui, je trouve, est beaucoup moins ergonomique et
+esthétique.
 
-# Les limitation
-Tout les donner récolter sont fournie par Vitalis. Donc les information ne
-seron nullement supérieur. Si il y a une erreur sur leur application il y en 
-aurra aussi une sur Better Bus. Si les serveur de Vitalis sont en panne mon 
-application ne fonctione plus. Si une mise a jour majeur est effectuer
-sur leur façon de communiquer alors Better Bus rique d'avoire des problème.
+À mon avis, il manque une fonctionnalité essentielle dans l'application Vitalis:
+la possibilité de créer des raccourcis vers des informations consultées très
+régulièrement pour ne pas avoir à refaire à chaque fois la requête. Il suffit
+de donner un arrêt de bus, une ligne et sa direction, par la suite il
+apparaîtra dans le menu principal un bouton qui amène directement à
+l'information voulue. Il y a aussi la possibilité d'ajouter un Widget sur le
+page d'accueil de votre téléphone pour rendre l'opération encore plus rapide.
+Certes, c'est une optimisation qui paraît être minime, mais je la trouve
+personnellement indispensable quand elle concerne une action que l'on peut
+faire deux à trois fois par jour dans un contexte de potentiel stress où
+l'on ne sait pas si on arrivera à prendre ce Bus à temps.
 
-La seconde limitation majeur c'est l'impossibliter d'acheter des billet de bus
-sur Better Bus. Se qui peut être dérengent pour beaucoup de personne.
+# Les limitations
 
-# Screenshoot
+Toutes les données affichées sur Better Bus sont fournies par le site Vitalis.
+S'il y a une erreur sur leur application, il y en aura aussi une sur Better
+Bus. Si les serveurs de Vitalis sont en panne, alors mon application ne
+fonctionne plus. Si une mise à jour majeure est effectuée sur leur serveur
+alors Better Bus risque d'avoir des difficultés pour accéder à nouveau aux données.
+
+
+La seconde limitation majeure c'est l'impossibilité d'acheter des billets de
+bus sur Better Bus. Ce qui peut être dérangeant pour beaucoup de personnes.
+
+# Captures d'écran
 {{<gallery 
     "./better-bus-v2-0.png"
     "./better-bus-v2-1.png"
