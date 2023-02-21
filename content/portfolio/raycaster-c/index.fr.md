@@ -3,67 +3,86 @@ title: "Raycaster-C"
 tags: ["C"]
 sourceCode: "https://github.com/Bubulleux/Raycast-C"
 thumbnail: "/screenshot_3.png"
-lang: fr
+description: "Une simple démo technique d’un moteur 3D similaire a celui de Doom 64."
 ---
+
 [MLX]: https://github.com/42Paris/minilibx-linux
 [42]: https://fr.wikipedia.org/wiki/42_(%C3%A9coles) 
 [X11]: https://fr.wikipedia.org/wiki/X_Window_System
 [Raycasting]: https://fr.wikipedia.org/wiki/Raycasting
 [Wolfenstein 3D]: https://fr.wikipedia.org/wiki/Wolfenstein_3D
 [Doom]: https://fr.wikipedia.org/wiki/Doom_64
+[interpolation linéaire]: https://fr.wikipedia.org/wiki/Interpolation_lin%C3%A9aire
+[Raycast-gif]: https://upload.wikimedia.org/wikipedia/commons/e/e7/Simple_raycasting_with_fisheye_correction.gif?uselang=fr
 
-# Presentation
+# Présentation
 
-Raycaster-C est une petit demo d'un moteur 3D. Le programe est entièrement
-écrit en C. Pour rendre les images il utilise le principe de raycasting et pour
-m'aider dans ma tache j'ai utiliser la librerie [MLX].  
+Raycaster-C est une petite démo d'un moteur 3D. Le programme est entièrement
+écrit en C. Pour rendre les images il utilise le principe de [Raycasting] et
+pour m'aider dans ma tache j'ai utilisé la librairie [MLX].  
 
-Le programe n'a pas vraiment de but vous êtes simplement dans un monde a ciel
-ouvert avec des mure qui vous entoure de différent type. 
+Le programme n'a pas vraiment de but vous êtes simplement dans un monde à ciel
+ouvert avec des murs qui vous entourent de différent type. Vous pouvez vous y
+déplacer et regarder autour de vous.
 
-## Fonctionement
+## Fonctionnement
 
-Le moteur fonctione sur le principe de [Raycasting] ce qui la methode utiliser
-dans le premier doom et utiliser la premier fois dans [Wolfenstein 3D] il est 
-cepandent plus connue comme étant le moteur de [Doom]. Le
-principe est simple. L'on vas crée un plan composer de segement qui
-représentera nos mure. Par la suite l'on vas lancer des Rayon pour chaque colone de
-pixel de notre écran. Puis l'on calcule les segement avec lesquelle
-le rayon intersect. En connaisent ce point l'on peut par la
-suite calculer pour chaque colone de l'écrant la proportion de mur a afficher
-sur l'hauter de l'écrant et la texture a afficher. 
+Le moteur fonctionne sur le principe de [Raycasting]. [Wolfenstein 3D] est
+considéré comme le premier jeu ayant utilisé cette méthode de rendu mais le
+[Raycasting] est plus connue pour avoir été utiliser dans le moteur de [Doom].  
 
-Il sufis par la suite de rajouter la prise en charge du clavier et de la sourie
-pour déplacer la caméra. 
+Le principe est plutôt simple. L'on va créer un plan composer de segments qui
+représenteront nos murs. Par la suite l'on va lancer des rayons dans la
+direction vers laquelle on regarde pour chaque colonne de pixel de notre écran.
+Puis l'on calcule le segment le plus proche avec lequel le rayon intersecte.
+Par la suite l'on peut calculer a quelle distance est le mur de nous. Il suffit
+par la suite d'un petit peu de trigonométrie pour calculer quelle taille doit
+avoir le mur sur la colonne de pixel que l'on est en train de calculer, L'on va
+par la suite répéter cette opération jusqu'à remplir l'écran. En fonction de la
+direction du segment que l'on a intersecté l'on peut connaitre la quantité de
+lumière qu'il reçoit l'on peut ensuite modifier la luminosité de la texture du
+mur (assombrir ou éclaircir) pour encore rajouter un effet de 3D. Avec encore
+plus de trigonométrie l'on peut ajouter une texture au sol. L'on peut aussi
+facilement implémenter du brouillard en faisant une [interpolation linéaire]
+entre la couleur que doit avoir le mur et la couleur du brouillard en fonction
+de la distance de ce que l'on regarde.  
 
-Le brouillard est simplement rajouter en faisent une interpolation linéaire
-entre le pixel a afficher et la couleurs du brouillard en fonction de la
-distance entre le point d'intersection et la caméra.
+Avec tout c'est effet l'on obtient une impression de 3D assez satisfaisant.
+
+![Exemple de Raycasting][Raycast-gif]
+
+*Je ne suis pas à l'origine ce gif c'est un exemple il provient de la page
+Wikipedia*
 
 ## MLX
 
-[MLX] autrement appeler Mini Lib X est une simple librerie permetent de
-facilment crée une fênetre dans laquelle nous pourons par la suite afficher des
-chose et récupérer les entrer clavier et souris. Elle a été crée par par des
-personne de l'école [42] c'est une librerie minimaliste de la très connue
-librerie [X11] qui permet de crée des fenetre mais de façon beaucoup plus
-complete.
+[MLX] autrement appeler MiniLibX est une simple librairie permettant de
+facilement créer une fenêtre dans laquelle nous pourrons par la suite afficher
+des choses et récupérer les entrer clavier et souris. Elle a été créée par et
+pour les étudiants de l'école [42]. Cette librairie est une version alléger de
+la très connue librairie [X11] qui permet de créer des fenêtres au même titre
+que [MLX] mais de façon beaucoup plus complète.
 
+# Les limitations
 
-# Limitation
+À cause du fonctionnement du moteur le joueur ne peut pas modifier la hauteur
+de la caméra il ne peut donc ni sauter ni bouger sa caméra verticalement.
 
-A cause du fonctionement du moteur le joueur ne peut pas modifier la hauter de
-la caméra il ne peut donc ni sauter ni bouger sa caméra verticalement.
+Le second problème étant que le programme fonctionne entièrement sur le un seul
+cœur processeur et non sur la carte graphique étant donné que c'était un de mes
+tout premier projet écrit en C le programme n'est pas non plus très bien
+optimisé. Il peut avoir quelques ralentissements sur certain ordinateur peu
+puissant.
 
-# Ce que j'en
+# Ce que ce projet m'a appris
 
-Ce projet n'a pour nule intérais de crée un outil de developement de jeux
-vidéo. Mais simplement me challenger. Il ma permis d'apprendre a utiliser le C
-qui est un language très bas niveau et qui permet d'en apprendre plus sur le
-fonctionement d'un ordinateur. Il ma aussi permis d'en apprendre plus sur le
-rendu graphique qui est un sujet très vaste.
+Ce projet n'a pour nul intérêt de créer un outil de développement de jeux
+vidéo. Mais simplement me challenger. Il m'a permis d'apprendre a utilisé le C
+qui est un langage très bas niveau ce qui m'a fait comprendre beaucoup de chose
+sur le fonctionnement d'un ordinateur. Il m'a aussi permis d'en apprendre plus
+sur le rendu graphique qui est un sujet très vaste mais très intéressant.
 
-# Screenshot
+# Captures d'écran
 
 {{<gallery 
     "./screenshot_7.png"
