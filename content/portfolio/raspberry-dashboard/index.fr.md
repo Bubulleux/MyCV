@@ -2,30 +2,37 @@
 title: "Raspberry Dashboard"
 tags: ["nodejs", "web"]
 sourceCode: "https://github.com/Bubulleux/Raspberry-Dashboard"
-thumbnail: ""
+thumbnail: "/screenshot_1.png"
+description: "Un dashboard dans le but de monitorer un Raspberry Pi"
 ---
 
 # Presentation
 
-Raspberry Dashboard est une interface web a la base pour Raspberry Pi.
-L'interface possède trois pannel:
+Raspberry Dashboard est une interface web a la base conçue pour monitoer un 
+Raspberry Pi, même si l'interface peut facilement être porter sur n'importe quelle linux.
+L'interface est fait avec nodejs et quelque packet npm.
 
+## Dashboard
+Le premier menu est simplement un tableaux d'informations. Il affiche certain 
+informations éssentiel comme le Model du Raspberry, sont système d'explotation, 
+la température et la charge du CPU. Il permet aussi d'éteindre ou de redémarer 
+le Raspberry.
 
-- Un premier menu indiquand des information majeur sur le raspberry comme:
-le model de celui ci, sont OS, sa charge CPU ou sa temperature. De boutton
-permet aussi de stoper completemtn le Raspberry Pi ou de le redémarer.
+![Page d'informations](./screenshot_1.png)
 
-- Le deuxième menu est le plus interessent, c'est un explorateur de ficher
-basic mais avec toute les featurse principaux d'un explorateur de ficher comme:
-la possibiliter de renomer, copier, coller, supprimer, ajouter des dossier,
-uploder/downloader des fichiers ou des dossier et crée des raccourcie.
+## File Explorer
+Ce panneaux est a mon avis le plus utilse et le mieux réussie. Le menu File Explorer 
+implémente un gestionaire de fichier a l'interieux du navigateur. On peut y 
+faire toute les actione basique et éssentiel d'un explorateur de fichier (Ajouter un dossier, 
+renomer un fichier, suprimer, couper, copier, coller). L'on peut également Télécharger 
+et Uploader des fichier. La dernière fonctionaliter c'est la possibiliter de crée des raccourcie.
 
-- Le dernière menu est un implément d'un terminal. L'émulation de terminal
-étant compliquer et n'ayant aucune connaisence sur le sujet j'ai arreter le 
-projet avant que le terminal marche corretement.
+![Page d'informations](./screenshot_3.png)
 
-# Architecture
+## Console
+Le dernier menu est une tentative d'implement un terminal dans un navigateur.
+Même si l'on peut faire quelque commande basique sont utilisation reste asser 
+compliquer il est donc préferable d'utiliser le SSH.
 
-Le projet est assé basique il est entièrement écrit avec nodejs et fonctione 
-principalement avec le socket pour la communication entre le server et le 
-client.
+![Page d'informations](./screenshot_2.png)
+
