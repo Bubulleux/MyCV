@@ -51,8 +51,8 @@ Avec tout c'est effet l'on obtient une impression de 3D assez satisfaisant.
 
 ![Exemple de Raycasting][Raycast-gif]
 
-*Je ne suis pas à l'origine ce gif c'est un exemple il provient de la page
-Wikipedia*
+*Je ne suis pas à l'origine ce gif c'est un exemple il provient de Wikipedia*
+https://commons.wikimedia.org/wiki/File:Simple_raycasting_with_fisheye_correction.gif
 
 ## MLX
 
