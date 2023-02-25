@@ -1,6 +1,6 @@
 ---
 title: "Bacterio"
-tags: ["Unity", "C#"]
+tags: ["Unity", "Csharp"]
 sourceCode: "https://github.com/Bubulleux/Bacterio"
 download: "https://github.com/Bubulleux/Bacterio/releases/latest"
 thumbnail: "/screenshot_2.png"

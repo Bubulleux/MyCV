@@ -9,6 +9,7 @@ fileCV = "cv.pdf"
 
 homeProjects = ["better-bus", "bacterio", "raycaster-c", "connect-4"]
 
+
 [[socials]]
 name = "Github"
 icon = "fa-brands fa-github"

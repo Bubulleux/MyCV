@@ -4,7 +4,7 @@ function checkReveal() {
 
     for (var i = 0; i < elements.length; i++) {
         let element = elements[i];
-        if (element.getBoundingClientRect().top < windowHeight && 
+        if (element.getBoundingClientRect().top < windowHeight - 30 && 
             !element.classList.contains("animated")) {
             element.classList.add("animated");
             setTimeout(() => {
@@ -16,4 +16,8 @@ function checkReveal() {
 
 window.addEventListener("scroll", checkReveal);
 
-checkReveal();
+document.addEventListener("readystatechange", even => {
+    if (event.target.readyState === "complete") {
+        checkReveal();
+    }
+});

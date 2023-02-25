@@ -1,3 +1,5 @@
+$font: {{ site.Params.style.font }};
+
 @import "constant.scss";
 @import "base.scss";
 @import "home.scss";

@@ -6,10 +6,8 @@
         {{ $projects := .Site.Params.homeProjects }}
         {{ $portfolio := .Site.GetPage "/portfolio" }}
         {{ range $projects }}
-            <li class="animated-on-scroll fade-from-left">
                 {{ $page := $portfolio.GetPage . }}
                 {{ $page.Render "summary" }}
-            </li>
             {{ end }}
     </ul>
     <div class="show-more">

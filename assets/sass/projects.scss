@@ -11,15 +11,18 @@
     margin: auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
+    justify-content: center;
 }
 
 .project-summary {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     background-color: $background-1;
     box-shadow: $shadow;
     padding: 1rem;
     margin: 0.5rem;
-    max-width: 30rem;
     border-radius: 2rem;
 
 
@@ -33,9 +36,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        aspect-ratio: 1;
-        max-height: 15rem;
         margin: auto;
+        aspect-ratio: 1;
     }
 }
 
@@ -92,6 +94,18 @@ a.tag-btn {
             padding: 1rem;
             max-width: 80ch;
             margin: 1rem auto;
+
+            ul {
+                list-style: outside disc;
+                margin-left: 2rem;
+                li {
+                    margin-block: 0.5rem;
+                }
+            }
+
+            video, img{
+                max-width: 100%;
+            }
 
             h1, h2, h3, h4, h5, h6 {
                 margin: 1.5em 0;

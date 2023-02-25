@@ -1,3 +1,10 @@
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family={{ site.Params.style.font }}">
+
 {{ $sass := resources.Get "sass/main.scss" }}
-{{ $style := $sass | resources.ToCSS }}
+{{ $options := dict
+    "targetPath" "css/style.css"
+    "transpiler" "libsass"
+}}
+{{ $style := $sass | resources.ExecuteAsTemplate "" . | resources.ToCSS $options }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">

@@ -2,11 +2,9 @@
 <div class="projects-list-title">
     <h2>{{ T "myProjects" }}</h2>
 </div>
-<ul class="project-list">
+<div class="project-list">
     {{ range .Pages }}
-    <li>
         {{ .Render "summary" }}
-    </li>
     {{ end }}
-</ul>
+</div>
 {{ end }}

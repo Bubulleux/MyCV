@@ -1,4 +1,4 @@
-<div class="project-summary">
+<div class="project-summary animated-on-scroll fade-from-bottom">
     <div class="thumbnail">
         {{ if .Params.thumbnail }}
         <img src="{{ path.Dir .RelPermalink}}{{ .Params.thumbnail }}" 
@@ -7,8 +7,9 @@
     </div>
     <div class="detail">
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>Une resumer d'une application asser court pour éviter
-        un text couper</p>
+        {{ if .Params.description }}
+        <p>{{ .Params.description }}</p>
+        {{ end }}
         <div class="tag-list">
             {{ range (.GetTerms "tags") }}
             <a class="tag-btn" href="{{ .Permalink }}">{{ .LinkTitle }}</a>

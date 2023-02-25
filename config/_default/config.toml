@@ -3,6 +3,9 @@ languageCode = 'fr'
 defaultContentLanguage = "fr"
 title = 'Ulysse();'
 
+[params.style]
+font = "Roboto"
+
 [[params.languages]]
 name = { en = "French", fr = "Français" }
 level = "native"
