@@ -46,3 +46,21 @@ other="Projet tagé avec : "
 
 [myCV]
 other="Voir mon CV"
+
+[personalsInformations]
+other = "Information Personnel"
+
+[skills]
+other = "Compétance"
+
+[hobbies]
+other = "Centres d'intérets"
+
+[studies]
+other = "Etude"
+
+[professionalExperience]
+other = "Expériance professionels"
+
+[languages]
+other = "Langue parler"

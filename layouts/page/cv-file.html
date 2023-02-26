@@ -10,7 +10,8 @@
         </header>
         <main>
             <aside>
-                <div class="contact">
+                <section class="contact">
+                    <h2>{{ T "personalsInformations" }}</h2>
                     <ul class="infos-list">
                         {{ with .Site.Params }}
                         <li><i class="fa-solid fa-user"></i><b> {{ .name }}</b></li>
@@ -24,10 +25,72 @@
                             <b>{{ .email }}</b>
                         </li>
                         {{ end }}
+                        <li><i class="fa-solid fa-earth-americas"></i><b>{{ .Site.BaseURL }}</b></li>
+                        {{ range .Site.Params.socials }}
+                        <li><i class="{{ .icon }}"></i><b>{{ .link }}</b></li>
+                        {{ end }}
+                    </ul>
+                </section>
+
+                <section class="languages">
+                    <h2>{{ T "languages" }}</h2>
+                    <ul>
+                        {{ range .Site.Params.language }}
+                        <li>
+                            <span>{{ .name }}</span>
+                            <div class="range-bar" style="--bar-level: {{ .note }}"></div>
+                            <span>{{ .level }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </section>
+
+                <section class="skills">
+                    <h2>{{ T "skills" }}</h2>
+                    <ul> 
+                        {{ range .Site.Params.shortSkills }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </section>
+
+                <section class="hobbies">
+                    <h2>{{ T "hobbies" }}</h2>
+                    <ul> 
+                        {{ range .Site.Params.hobbies }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </section>
             </aside>
             <div class="body">
                 <section class="presentation">
                     <p>{{ .Site.Params.presentation }}</p>
+                </section>
+                <section class="professional-experience">
+                    <h2>{{ T "professionalExperience" }}</h2>
+                    <ul>
+                        {{ range sort .Site.Params.professionalExperience "weight" }}
+                        <li>
+                            <h3>{{ .name }}</h3>
+                            <p>{{ .description }}</p>
+                            <span>{{ .from }} {{ if .to }} - {{ .to }}{{ end }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </section>
+
+                <section class="studies">
+                    <h2>{{ T "studies" }}</h2>
+                    <ul>
+                        {{ range sort .Site.Params.study "weight" }}
+                        <li>
+                            <h3>{{ .name }}</h3>
+                            <p>{{ .description }}</p>
+                            <span>{{ .from }} {{ if .to }} - {{ .to }}{{ end }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
                 </section>
             </div>
         </main>

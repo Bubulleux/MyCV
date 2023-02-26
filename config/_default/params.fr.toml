@@ -7,6 +7,44 @@ presentation  = """Je suis passioner de developement et plus géneralement\
     l'informatique (haut niveau comme bas niveau) je suis en capaciter de\
     m'addapter très rapidement."""
 
+hobbies = ["Programmation et développement", "Jeux vidéo", "Apprendre de nouvelle chose"]
+
+shortSkills = [
+    "Apprendre de nouveaux language",
+    "Comprendre des problème",
+    "Rationel",
+]
+
+[[language]]
+name = "Français"
+note = 0.9
+level = "Natif"
+
+[[language]]
+name = "Anglais"
+note = 0.7
+level = "B2"
+
+[[study]]
+name = "Lycée bac géneralement a Nelson Mandela Poitiers"
+description = """Bac géneralement avec Mathématiques, Numérique Science Informatique 
+et Options Math éxpèret."""
+from = "2023"
+weight = 1
+[[study]]
+name = "Licence d'informatique a l'universiter de Poitiers"
+description = "CMI Informatique"
+from = "2024"
+to = "2026"
+weight = 2
+
+[[professionalExperience]]
+name = "Création d'un application modile en auto didacte"
+description = "Veiller consulter mon site web pour plus d'information"
+from = "2021"
+to = "2023"
+weight = 1
+
 
 
 [[skillsGroup]]

@@ -8,6 +8,7 @@ homeHeaderBackground = "img/home_header_background.png"
 fileCV = "cv.pdf"
 
 homeProjects = ["better-bus", "bacterio", "raycaster-c", "connect-4"]
+cvProjects = ["better-bus", "raycaster-c"]
 
 
 [[socials]]
