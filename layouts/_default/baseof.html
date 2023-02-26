@@ -2,12 +2,21 @@
 <html>
     <head>
         {{ partial "head.html" . }}
+        <title>
+            {{ block "title" .}}
+            Error no title
+            {{ end }}
+        </title>
     </head>
     <body>
+        {{ block "header" . }}
         {{ partial "header.html" . }}
+        {{ end }}
         <main>
             {{ block "main" . }}{{ end }}
         </main>
+        {{ block "footer" . }}
         {{ partial "footer.html" . }}
+        {{ end }}
     </body>
 </html>

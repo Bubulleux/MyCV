@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head/style.html" . }}
+        <meta charser="utf-8"/>
+    </head>
+    <body class="cv">
+        <header>
+            <h1>{{ .Site.Params.name }}</h1>
+        </header>
+        <main>
+            <aside>
+                <div class="contact">
+                    <ul class="infos-list">
+                        {{ with .Site.Params }}
+                        <li><i class="fa-solid fa-user"></i><b> {{ .name }}</b></li>
+                        <li><i class="fa-solid fa-location-dot"></i><b> {{ .localisation }}</b></li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <b>{{ .phone }}</b>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <b>{{ .email }}</b>
+                        </li>
+                        {{ end }}
+            </aside>
+            <div class="body">
+                <section class="presentation">
+                    <p>{{ .Site.Params.presentation }}</p>
+                </section>
+            </div>
+        </main>
+
+    </body>
+</html>

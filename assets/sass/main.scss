@@ -9,6 +9,7 @@ $font: {{ site.Params.style.font }};
 @import "gallery.scss";
 @import "animator.scss";
 @import "contact.scss";
+@import "cv.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilites;

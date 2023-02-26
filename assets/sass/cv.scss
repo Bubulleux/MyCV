@@ -1,0 +1,46 @@
+body.cv {
+    width: 21cm;
+    height: 29.7cm;
+    border: solid purple 5px;
+    font-size: 15px;
+    box-sizing: content-box;
+    &>header {
+        position: static;
+        width: 100%;
+        height: 10%;
+        font-size: 1rem;
+        margin: 0;
+        padding: 1cm;
+        border-radius: 0;
+        box-shadow: none;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    main {
+        height: 90%;
+        display: flex;
+        justify-content: stretch;
+        aside {
+            min-width: 7cm;
+            margin: 0.5cm;
+            .contact {
+            }
+        }
+        .body {
+            background-color: white;
+            * {
+                color: black;
+            }
+
+            
+
+        }
+    }
+}
+
+@media print {
+    body.cv {
+        border: none;
+    }
+}
