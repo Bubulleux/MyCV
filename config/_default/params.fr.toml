@@ -1,11 +1,19 @@
-presentation  = """Je suis passioner de developement et plus géneralement\
-    d'informatique. J'apprend exclusivement au auto-didacte. Pour le moment\
-    je fait exclusivement des projet personne personne ou je me donne aucune\
-    limite. J'essait un maximum de chose de façon a savoir se qui me plait\
-    vraiment et dans le but d'en apprendre toujours plus sur le monde\
-    merveilleur de l'informatique. En ayant toucher a beaucoup de domaine de\
-    l'informatique (haut niveau comme bas niveau) je suis en capaciter de\
-    m'addapter très rapidement."""
+heroSubTitle = [
+    "Je m’appelle Ulysse aka Bubulle.",
+    "Je suis développeur autodidacte et passionner.",
+]
+
+presentation  = """ Je suis développeur autodidacte pour le moment. Je suis
+grandement passionné par tout ce qui touche a l’informatique de prêt ou de
+loin. Je ne me donne aucune limite et j’essaie de toucher a un maximum de
+domaine de l’informatique pour trouver ce qu’il me plait vraiment. Je peux
+utiliser python pour créer rapidement un petit outil, je peux utiliser des
+langages bas niveau comme C ou C++ pour créer des algorithmes complexe qui
+demande beaucoup de performance. Ou je peux utiliser du C#, Java ou Dart pour
+créer des applications ou des jeux. Je ne reste pas bloquer dans ma zone de
+confort et j’essais toujours d'en apprendre plus sur les différents algorithme,
+technologie et méthode de développement qui existe."""
+
 
 hobbies = ["Programmation et développement", "Jeux vidéo", "Apprendre de nouvelle chose"]
 
@@ -32,15 +40,15 @@ et Options Math éxpèret."""
 from = "2023"
 weight = 1
 [[study]]
-name = "Licence d'informatique a l'universiter de Poitiers"
+name = "Licence d’informatique a l'universiter de Poitiers"
 description = "CMI Informatique"
 from = "2024"
 to = "2026"
 weight = 2
 
 [[professionalExperience]]
-name = "Création d'un application modile en auto didacte"
-description = "Veiller consulter mon site web pour plus d'information"
+name = "Création d’un application modile en auto didacte"
+description = "Veiller consulter mon site web pour plus d’information"
 from = "2021"
 to = "2023"
 weight = 1
@@ -50,7 +58,7 @@ weight = 1
 [[skillsGroup]]
 name = "Général"
 description = """Je suis très passioner par tout se qui touche au science et 
-particulièrement les Math. Mais si mon niveau n'est pas vraiment technique
+particulièrement les Math. Mais si mon niveau n’est pas vraiment technique
 je comprend et connais beaucoup de chose particulièrement en Physique. Mon 
 expèrience a écrire tout type de programe me donne un bon niveau en Algorithmie
 """
@@ -66,9 +74,9 @@ color = "green"
 [[skillsGroup]]
 name = "Language de programation"
 description = """Comme dit plus tôt je suis une personne assez curieuse quand
-il en vient a parler de sujet qui touche l'informatique. Cela ma permit 
+il en vient a parler de sujet qui touche l’informatique. Cela ma permit 
 de toucher a plein de language de programation. Cette experience dans tout 
-c'est language me permet d'en apprendre encore de nouveaux avec grand faciliter.
+c’est language me permet d'en apprendre encore de nouveaux avec grand faciliter.
 """
 color = "blue"
     [[skillsGroup.skill]]
@@ -109,9 +117,9 @@ color = "red"
 
 [[skillsGroup]]
 name = "Outil"
-description = """Pour programer j'utilise essentielement des programe open-source
-et si possible qui ne sont pas possider par une grand companie. Même si j'ai 
-aussi la capaciter de m'adapter et d'utiliser certain outil comme VS code et 
+description = """Pour programer j’utilise essentielement des programe open-source
+et si possible qui ne sont pas possider par une grand companie. Même si j’ai 
+aussi la capaciter de m’adapter et d'utiliser certain outil comme VS code et 
 la Suite Jetbrain. Je code habituelement sous Arch linux avec NeoVim et je
 met tout monde code sur Github."""
     [[skillsGroup.skill]]
