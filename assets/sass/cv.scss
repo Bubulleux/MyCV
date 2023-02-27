@@ -21,23 +21,51 @@ body.cv {
         height: 90%;
         display: flex;
         justify-content: stretch;
+        h2 {
+            border: solid $primary 0;
+            border-block-width: 0.2em;
+            padding: 0.3em;
+        }
         aside {
             min-width: 7cm;
+            h2 {
+                display: block;
+                text-align: center;
+                margin-block: 1.5em 0.5em;
+            }
             margin: 0.5cm;
+
+            .languages {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 1.5em;
+                }
+                li .language-title {
+                    margin: 0.1em 0.5cm;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .language-level {
+                    font-size: 0.8em;
+                }
+            }
             .hobbies, .skills {
                 ul {
-                    
+                    list-style: disc;
+                    margin-left: 0.5cm;
                 }
             }
         }
         .body {
             background-color: white;
+            padding: 0.5cm;
             * {
                 color: black;
             }
-
-            
-
+            section {
+            }
         }
     }
 }

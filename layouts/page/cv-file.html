@@ -12,7 +12,7 @@
             <aside>
                 <section class="contact">
                     <h2>{{ T "personalsInformations" }}</h2>
-                    <ul class="infos-list">
+                    <ul class="infos-list not-a-list">
                         {{ with .Site.Params }}
                         <li><i class="fa-solid fa-user"></i><b> {{ .name }}</b></li>
                         <li><i class="fa-solid fa-location-dot"></i><b> {{ .localisation }}</b></li>
@@ -34,12 +34,15 @@
 
                 <section class="languages">
                     <h2>{{ T "languages" }}</h2>
-                    <ul>
+                    <ul class="not-a-list">
                         {{ range .Site.Params.language }}
                         <li>
-                            <span>{{ .name }}</span>
-                            <div class="range-bar" style="--bar-level: {{ .note }}"></div>
-                            <span>{{ .level }}</span>
+                            <div class="language-title">
+                                <span>{{ .name }}</span>
+                                <span class="language-level">{{ .level }}</span>
+                            </div>
+                            <div class="range-bar" style="--bar-level: {{ .note }}">
+                            </div>
                         </li>
                         {{ end }}
                     </ul>
@@ -64,7 +67,8 @@
                 </section>
             </aside>
             <div class="body">
-                <section class="presentation">
+                <section class="cv-presentation">
+                    <h2>{{ T "presentation" }}</h2>
                     <p>{{ .Site.Params.presentation }}</p>
                 </section>
                 <section class="professional-experience">
@@ -92,8 +96,18 @@
                         {{ end }}
                     </ul>
                 </section>
+                <section class="cv-project">
+                    <h2>{{ T "myProjects" }}</h2>
+                    <ul class="project-list">
+                        {{ $projects := .Site.Params.cvProjects }}
+                        {{ $portfolio := .Site.GetPage "/portfolio" }}
+                        {{ range $projects }}
+                        {{ $page := $portfolio.GetPage . }}
+                        {{ $page.Render "summary" }}
+                        {{ end }}
+                    </ul>
+                </section>
             </div>
         </main>
-
     </body>
 </html>

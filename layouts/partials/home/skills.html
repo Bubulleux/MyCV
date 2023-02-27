@@ -8,7 +8,7 @@
             {{ if .description }}
             <p class="description">{{ .description }}</p>
             {{ end }}
-            <ul class="skills">
+            <ul class="skills not-a-list">
                 {{ range .skill }}
                 <li class="skill" {{if .comment}} title="{{.comment}}"{{end}}>
                     <div class="range-box">
