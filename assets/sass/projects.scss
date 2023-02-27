@@ -13,6 +13,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
     justify-content: center;
+    &>* {
+        display: grid;
+        justify-content: center;
+    }
 }
 
 .project-summary {
@@ -23,8 +27,7 @@
     box-shadow: $shadow;
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 2rem;
-
+    border-radius: 2em;
 
     img {
         max-height: 100%;

@@ -3,7 +3,7 @@
     <div class="skills-groups">
         {{ range . }}
         <div class="skills-group animated-on-scroll fade-from-bottom" 
-            {{ if .color }} style="--bar-color: {{ .color }};" {{ end }}>
+            {{ if .color }} style="--section-color: {{ .color }};" {{ end }}>
             <h3>{{ .name }}</h3>
             {{ if .description }}
             <p class="description">{{ .description }}</p>
@@ -11,9 +11,8 @@
             <ul class="skills not-a-list">
                 {{ range .skill }}
                 <li class="skill" {{if .comment}} title="{{.comment}}"{{end}}>
-                    <div class="range-box">
-                        <div class="range-bar animated-on-scroll" 
-                            style="width: calc({{ .note }} * 100%);"></div>
+                    <div class="range-bar animated-on-scroll" 
+                        style="--bar-level: {{ .note }};">
                             <span>{{ .name }}</span>
                     </div>
                 </li>

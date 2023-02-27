@@ -1,4 +1,4 @@
-.animated-on-scroll {
+.animated-on-scroll:is(.fade-from-left, .fade-from-right, .fade-from-bottom) {
     position: relative;
     opacity: 0;
 }
@@ -14,6 +14,7 @@
     &.fade-from-right {
         animation: fade-right $animation-time ease-out;
     }
+    
 }
 
 @keyframes fade-bottom {
@@ -45,5 +46,25 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+.range-bar {
+    &.animated-on-scroll {
+        &::after{
+            width: 0;
+        }
+        &.animate::after{
+            animation: range-bar-animation $animation-time ease-out;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes range-bar-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: calc(var(--bar-level) * 100%);
     }
 }

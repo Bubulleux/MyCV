@@ -100,7 +100,7 @@
         padding: 1.5rem;
         border-radius: 2rem;
         background-color: $background-1;
-        --bar-color: #{$primary};
+        --section-color: #{$primary};
     }
 
     .skills {
@@ -111,41 +111,16 @@
     }
     .skill {
         margin-block: 0.3rem;
-        .range-box {
-            display: flex;
-            align-items: center;
+        .range-bar {
             width: 13em;
+            height: 1.8em;
             background-color: $background-0;
-            border-radius: 10px;
-            height: 1.5em;
-            position: relative;
-            z-index: 0;
+            --bar-color: var(--section-color);
 
             span {
                 margin-left: 0.5em;
             }
-            .range-bar {
-                z-index: -1;
-                background-color: var(--bar-color);
-                border-radius: 10px;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                &.animate {
-                    transform-origin: center left;
-                    animation: skill-bar-animation 0.5s ease-out;
-                }
-            }
         }
-    }
-}
-
-@keyframes skill-bar-animation {
-    from {
-        transform: scaleX(0%);
-    }
-    to {
-        transform: scaleX(100%);
     }
 }
 

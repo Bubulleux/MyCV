@@ -62,16 +62,26 @@ ul.not-a-list {
     width: 100%;
     height: 1.5em;
     background-color: $background-1;
+    --bar-color: #{$primary};
     border-radius: 1em;
     overflow: hidden;
     padding: 0.2em;
+    isolation: isolate;
+    position: relative;
+    * {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 .range-bar::after {
     content: "";
-    display: block;
-    background-color: $primary;
+    z-index: -1;
+    background-color: var(--bar-color);
     height: 100%;
     width: calc(var(--bar-level) * 100%);
     border-radius: 1em;
+    display: block;
 }
+
 

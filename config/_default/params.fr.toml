@@ -6,13 +6,10 @@ heroSubTitle = [
 presentation  = """ Je suis développeur autodidacte pour le moment. Je suis
 grandement passionné par tout ce qui touche a l’informatique de prêt ou de
 loin. Je ne me donne aucune limite et j’essaie de toucher a un maximum de
-domaine de l’informatique pour trouver ce qu’il me plait vraiment. Je peux
-utiliser python pour créer rapidement un petit outil, je peux utiliser des
-langages bas niveau comme C ou C++ pour créer des algorithmes complexe qui
-demande beaucoup de performance. Ou je peux utiliser du C#, Java ou Dart pour
-créer des applications ou des jeux. Je ne reste pas bloquer dans ma zone de
-confort et j’essais toujours d'en apprendre plus sur les différents algorithme,
-technologie et méthode de développement qui existe."""
+domaine de l’informatique, car je ne reste
+pas bloquer dans ma zone de confort et j’essaie toujours d’en apprendre plus
+sur les différents algorithmes, technologie et méthode de développement qui
+existe."""
 
 
 hobbies = ["Programmation et développement", "Jeux vidéo", "Apprendre de nouvelle chose"]
@@ -23,15 +20,16 @@ shortSkills = [
     "Rationel",
 ]
 
-[[language]]
-name = "Français"
-note = 0.9
-level = "Natif"
 
 [[language]]
 name = "Anglais"
 note = 0.7
 level = "B2"
+
+[[language]]
+name = "Espagnol"
+note = 0.3
+level = "0"
 
 [[study]]
 name = "Lycée bac géneralement a Nelson Mandela Poitiers"

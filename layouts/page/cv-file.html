@@ -96,17 +96,17 @@
                         {{ end }}
                     </ul>
                 </section>
-                <section class="cv-project">
-                    <h2>{{ T "myProjects" }}</h2>
-                    <ul class="project-list">
-                        {{ $projects := .Site.Params.cvProjects }}
-                        {{ $portfolio := .Site.GetPage "/portfolio" }}
-                        {{ range $projects }}
-                        {{ $page := $portfolio.GetPage . }}
-                        {{ $page.Render "summary" }}
-                        {{ end }}
-                    </ul>
-                </section>
+                <!-- <section class="cv-project"> -->
+                <!--     <h2>{{ T "myProjects" }}</h2> -->
+                <!--     <ul class="project-list"> -->
+                <!--         {{ $projects := .Site.Params.cvProjects }} -->
+                <!--         {{ $portfolio := .Site.GetPage "/portfolio" }} -->
+                <!--         {{ range $projects }} -->
+                <!--         {{ $page := $portfolio.GetPage . }} -->
+                <!--         {{ $page.Render "summary" }} -->
+                <!--         {{ end }} -->
+                <!--     </ul> -->
+                <!-- </section> -->
             </div>
         </main>
     </body>

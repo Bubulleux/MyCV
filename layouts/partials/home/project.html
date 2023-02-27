@@ -7,7 +7,9 @@
         {{ $portfolio := .Site.GetPage "/portfolio" }}
         {{ range $projects }}
                 {{ $page := $portfolio.GetPage . }}
+                <li class="animated-on-scroll fade-from-bottom">
                 {{ $page.Render "summary" }}
+                </li>
             {{ end }}
     </ul>
     <div class="show-more">
